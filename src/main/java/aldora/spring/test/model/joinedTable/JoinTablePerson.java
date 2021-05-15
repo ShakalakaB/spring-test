@@ -1,10 +1,11 @@
 package aldora.spring.test.model.joinedTable;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-public class JoinTablePerson {
+public class JoinTablePerson implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

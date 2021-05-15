@@ -1,9 +1,10 @@
 package aldora.spring.test.model.singleTable;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-public class SingleTablePerson {
+public class SingleTablePerson implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -1,10 +1,11 @@
 package aldora.spring.test.model.tablePerClass;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-public class TablePerClassPerson {
+public class TablePerClassPerson implements Serializable {
     @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @GeneratedValue(strategy = GenerationType.TABLE)
