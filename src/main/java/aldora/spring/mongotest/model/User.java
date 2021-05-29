@@ -18,5 +18,5 @@ public class User {
     private String name;
 
     @DBRef
-    List<Post> posts = new ArrayList<>();
+    private List<Post> posts = new ArrayList<>();
 }
