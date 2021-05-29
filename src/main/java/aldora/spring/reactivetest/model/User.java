@@ -17,6 +17,6 @@ public class User {
     private String id;
     private String name;
 
-//    @DBRef
+    @DBRef
     private List<Post> posts = new ArrayList<>();
 }
